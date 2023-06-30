@@ -9,3 +9,6 @@
  <%= vedio_tag "" %>
 
 <%= link_to "New User", 'new_post'%>
+<%=button_to "Logout",logout_path, method: :delete ,data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"}%>

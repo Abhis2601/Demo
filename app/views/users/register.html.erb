@@ -1,5 +1,6 @@
-<h1>Login Page</h1>
-<%= form_with model: @users, url:'/login_user' do |form| %>
+<h1> Registeration Page</h1>
+
+<%= form_with model: @user, url:'/create_user' do |form| %>
   <div>
     <%= form.label :name %><br>
     <%= form.text_field :name %>
@@ -11,8 +12,6 @@
   </div>
   
   <div>
-    <%= form.submit "Login" %>
+    <%= form.submit "Submit" %>
   </div>
 <% end %>
-
-<%= link_to "Registeration", '/users/register'%>
